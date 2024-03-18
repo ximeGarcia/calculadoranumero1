@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ocho',
+    loadChildren: () => import('./ocho/ocho.module').then( m => m.OchoPageModule)
+  },
 ];
 
 @NgModule({
